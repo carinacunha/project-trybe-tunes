@@ -61,7 +61,7 @@ class Search extends React.Component {
               data-testid="search-artist-button"
               name="buttonSearch"
               type="submit"
-              disabled={ input < number }
+              disabled={ input.length < number }
             >
               Pesquisar
             </button>
