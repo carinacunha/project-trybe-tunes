@@ -18,7 +18,6 @@ class Album extends Component {
   async componentDidMount() {
     const { match: { params: { id } } } = this.props;
     const response = await getMusics(id);
-    // console.log(response);
 
     this.setState({
       listMusics: response,

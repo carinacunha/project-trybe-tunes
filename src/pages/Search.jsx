@@ -36,7 +36,8 @@ class Search extends React.Component {
   };
 
     handleChange = ({ target }) => {
-      this.setState({ input: target.value });
+      const value = target.type === 'ckeckbox' ? target.checked : target.value;
+      this.setState({ input: value });
     }
 
     render() {
